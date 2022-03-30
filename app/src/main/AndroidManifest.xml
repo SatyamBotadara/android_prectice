@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prectice">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo1_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Prectice">
+        <activity
+            android:name=".menu.myMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".object_passing.dusri_activity"
+            android:exported="false" />
+        <activity
+            android:name=".object_passing.pheli_activity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".fragment_slider.container_activity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".String_transfer.two_activity"
+            android:exported="false" />
+        <activity
+            android:name=".String_transfer.one_activity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".explicit_intent.third_explicit"
+            android:exported="false" />
+        <activity
+            android:name=".explicit_intent.second_explicit"
+            android:exported="false" />
+        <activity
+            android:name=".explicit_intent.first_explicit"
+            android:exported="true" />
+        <activity
+            android:name=".implicit_intent.implicit_intent"
+            android:exported="true" />
+        <activity
+            android:name=".switch_toggle.switch_toggle"
+            android:exported="true" />
+        <activity
+            android:name=".fragment_new_way.holder"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
