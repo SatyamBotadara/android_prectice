@@ -7,35 +7,105 @@
     tools:context=".object_passing.pheli_activity">
 
     <EditText
-        android:layout_width="209dp"
-        android:id="@+id/objtrans1"
-        android:layout_height="66dp"
-        android:layout_marginTop="152dp"
-        android:hint="enter your name"
+        android:id="@+id/pheli_id_edt"
+        android:layout_width="142dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:hint="enter your id"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/objtrans2"
-        android:layout_width="209dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="36dp"
-        android:hint="enter your city name"
+        android:id="@+id/pheli_name_edt"
+        android:layout_width="223dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:hint="enter your name"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/objtrans1" />
+        app:layout_constraintTop_toBottomOf="@+id/pheli_id_edt" />
 
-    <Button
-        android:id="@+id/btn_obj_send"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="send"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="84dp"
+        android:padding="5dp"
+        android:text="Enter marks of your subject"
+        android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/objtrans2" />
+        app:layout_constraintTop_toBottomOf="@+id/pheli_name_edt" />
+
+    <EditText
+
+        android:id="@+id/pheli_maths_edt"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="maths"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pheli_computer_edt" />
+
+    <EditText
+        android:id="@+id/pheli_physics_edt"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:hint="physics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/pheli_chemistry_edt"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Chemestry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pheli_physics_edt" />
+
+    <EditText
+        android:id="@+id/pheli_english_edt"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="English"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pheli_chemistry_edt" />
+
+    <EditText
+        android:id="@+id/pheli_computer_edt"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Computer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pheli_english_edt" />
+
+    <Button
+        android:id="@+id/pheli_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="32dp"
+        android:text="calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,8 @@
 package com.example.prectice.object_passing;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +12,8 @@ import android.widget.Toast;
 import com.example.prectice.R;
 import com.google.android.material.snackbar.Snackbar;
 
+import java.util.ArrayList;
+
 public class pheli_activity extends AppCompatActivity {
 
     @Override
@@ -17,30 +21,50 @@ public class pheli_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pheli);
 
-        Button b=findViewById(R.id.btn_obj_send);
-
+        Button b=findViewById(R.id.pheli_calculate);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String name,city;
 
-                EditText edt1=findViewById(R.id.objtrans1);
-                EditText edt2=findViewById(R.id.objtrans2);
+                // collect the data from the xml file
 
-//                Toast.makeText(pheli_activity.this,"this is the toast",Toast.LENGTH_LONG).show();
-//                Snackbar.make(view,"this is the snackbar",Snackbar.LENGTH_SHORT).show();
+                    // student details
 
-                name=edt1.getText().toString();
-                city=edt2.getText().toString();
-                if(name.isEmpty()){
-                    edt1.setError("please enter the data");
-                }
-                if(city.isEmpty()){
-                    edt2.setError("please enter the data");
-                }
+                    EditText edt1=findViewById(R.id.pheli_id_edt);
+                    EditText edt2=findViewById(R.id.pheli_name_edt);
 
-                people p=new people(name,city);
+                    //subject details
 
+                    EditText edt3=findViewById(R.id.pheli_physics_edt);
+                    EditText edt4=findViewById(R.id.pheli_chemistry_edt);
+                    EditText edt5=findViewById(R.id.pheli_maths_edt);
+                    EditText edt6=findViewById(R.id.pheli_computer_edt);
+                    EditText edt7=findViewById(R.id.pheli_english_edt);
+
+                    // converat data
+
+                    int id_studnet=Integer.parseInt(edt1.getText().toString());
+                    String name=edt2.getText().toString();
+
+                    // define array list
+                    ArrayList<Integer> makrs_arr=new ArrayList<>();
+
+                    makrs_arr.add(Integer.parseInt(edt3.getText().toString()));
+                    makrs_arr.add(Integer.parseInt(edt4.getText().toString()));
+                    makrs_arr.add(Integer.parseInt(edt5.getText().toString()));
+                    makrs_arr.add(Integer.parseInt(edt6.getText().toString()));
+                    makrs_arr.add(Integer.parseInt(edt7.getText().toString()));
+
+
+                // create object of the data
+
+                people p=new people(name,id_studnet,makrs_arr);
+
+                // pass to the second activity
+
+                Intent i=new Intent(pheli_activity.this,dusri_activity.class);
+                i.putExtra("data",p);
+                startActivity(i);
 
             }
         });
