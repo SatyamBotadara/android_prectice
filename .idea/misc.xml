@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/banner.xml" value="0.2255" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2255" />
         <entry key="app/src/main/res/layout/activity_container.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_container2.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_data_binding.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_dusri.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_first_explicit.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_holder.xml" value="0.35625" />
@@ -16,6 +19,7 @@
         <entry key="app/src/main/res/layout/activity_switch_toggle.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_third_explicit.xml" value="0.3411458333333333" />
         <entry key="app/src/main/res/layout/activity_two.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_view_binding.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_first_fragment.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_four.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_one.xml" value="0.35625" />

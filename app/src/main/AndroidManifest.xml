@@ -10,6 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prectice">
         <activity
+            android:name=".view_data_binding.data_binding"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view_data_binding.view_binding"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".menu.myMenuActivity"
             android:exported="false" />
         <activity
@@ -17,25 +31,16 @@
             android:exported="false" />
         <activity
             android:name=".object_passing.pheli_activity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".fragment_slider.container_activity"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".String_transfer.two_activity"
             android:exported="false" />
         <activity
             android:name=".String_transfer.one_activity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".explicit_intent.third_explicit"
             android:exported="false" />

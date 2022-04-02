@@ -5,7 +5,6 @@ import  androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
-
 import com.example.prectice.R;
 
 public class dusri_activity extends AppCompatActivity {

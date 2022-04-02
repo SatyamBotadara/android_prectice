@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="obj"
+            type="com.example.prectice.view_data_binding.Student" />
+
+        <variable
+            name="hello"
+            type="java.lang.Integer" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view_data_binding.data_binding">
+
+        <TextView
+            android:id="@+id/dataBinding_int"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="72dp"
+            android:text="@{hello.toString()}"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dataBinding_name"
+            android:layout_width="257dp"
+            android:layout_height="34dp"
+
+            android:layout_marginTop="116dp"
+            android:text="@{obj.name}"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/dataBinding_city"
+            android:layout_width="257dp"
+            android:layout_height="34dp"
+
+            android:layout_marginTop="180dp"
+            android:text="@{obj.city}"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="120dp"
+            android:text="enter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dataBinding_name" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
