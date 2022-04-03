@@ -8,8 +8,10 @@
         <entry key="app/src/main/res/layout/activity_container.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_container2.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_data_binding.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_display_marks.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_dusri.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_first_explicit.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_get_marks.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_holder.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_implicit_intent.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />

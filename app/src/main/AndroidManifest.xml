@@ -10,7 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prectice">
         <activity
-            android:name=".view_data_binding.data_binding"
+            android:name=".mini_marks_generator.display_marks"
+            android:exported="false" >
+
+        </activity>
+        <activity
+            android:name=".mini_marks_generator.getMarks"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,10 +24,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view_data_binding.view_binding"
+            android:name=".view_data_binding.data_binding"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".view_data_binding.view_binding"
+            android:exported="true" />
         <activity
             android:name=".menu.myMenuActivity"
             android:exported="false" />
@@ -31,7 +39,7 @@
             android:exported="false" />
         <activity
             android:name=".object_passing.pheli_activity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".fragment_slider.container_activity"
             android:exported="true" />
