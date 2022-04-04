@@ -10,12 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prectice">
         <activity
-            android:name=".mini_marks_generator.display_marks"
-            android:exported="false" >
-
-        </activity>
-        <activity
-            android:name=".mini_marks_generator.getMarks"
+            android:name=".cordinator_layout.cordinator_layout"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,10 +19,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view_data_binding.data_binding"
+            android:name=".mini_marks_generator.display_marks"
+            android:exported="false"></activity>
+        <activity
+            android:name=".mini_marks_generator.getMarks"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".view_data_binding.data_binding"
+            android:exported="true"></activity>
         <activity
             android:name=".view_data_binding.view_binding"
             android:exported="true" />
