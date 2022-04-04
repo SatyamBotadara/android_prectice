@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher_round"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="130dp"
+        android:layout_alignParentLeft="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/name_linear"
+        android:layout_below="@id/img_logo"
+        android:layout_alignStart="@id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Satyam Botadara"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/email_linear"
+        android:layout_below="@id/name_linear"
+        android:layout_alignStart="@id/name_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="satyambotadra99m@gmail.com"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/email_linear"
+        android:layout_alignStart="@id/email_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9328531290"
+        />
+
+</RelativeLayout>
