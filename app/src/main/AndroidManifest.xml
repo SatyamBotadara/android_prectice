@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prectice">
         <activity
-            android:name=".cordinator_layout.cordinator_layout"
+            android:name=".login_registation_app.registration_activity"
+            android:exported="false" />
+        <activity
+            android:name=".login_registation_app.login_activity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,16 +22,33 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".mini_marks_generator.display_marks"
-            android:exported="false"></activity>
-        <activity
-            android:name=".mini_marks_generator.getMarks"
-            android:exported="true">
+            android:name=".design.design_demo"
+            android:exported="false" />
 
+        <activity
+            android:name=".calcActivity.calc"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
+            android:name=".navigation_drawer.mynavigation_drawer"
+            android:exported="true" />
+        <activity
+            android:name=".cordinator_layout.cordinator_layout"
+            android:exported="true" />
+        <activity
+            android:name=".mini_marks_generator.display_marks"
+            android:exported="false" />
+        <activity
+            android:name=".mini_marks_generator.getMarks"
+            android:exported="true" />
+        <activity
             android:name=".view_data_binding.data_binding"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".view_data_binding.view_binding"
             android:exported="true" />

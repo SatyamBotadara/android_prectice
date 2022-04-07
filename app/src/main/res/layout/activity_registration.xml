@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".login_registation_app.registration_activity">
+
+    <ImageView
+        android:id="@+id/regist_logo"
+        android:layout_width="87dp"
+        android:layout_height="102dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        />
+
+    <EditText
+        android:id="@+id/regist_full_name"
+        android:layout_width="340dp"
+        android:textColorHint="#b2b5c2"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/regist_logo"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_height="50dp"
+        android:paddingLeft="30dp"
+        android:hint="Full name"
+        android:background="@drawable/demo"
+        />
+
+    <EditText
+        android:id="@+id/regist_full_Email"
+        android:layout_width="340dp"
+        android:textColorHint="#b2b5c2"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/regist_full_name"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_height="50dp"
+        android:paddingLeft="30dp"
+        android:hint="Email"
+        android:background="@drawable/demo"
+        />
+
+
+    <EditText
+        android:id="@+id/regist_full_password"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/regist_full_Email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/demo"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:paddingLeft="30dp"
+        android:textColor="@color/black"
+        android:textColorHint="#b2b5c2" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/regist_signup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/regist_full_password"
+        android:background="@drawable/button_desing"
+        android:text="Sign Up"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignStart="@id/regist_full_password"
+        android:width="340dp"
+        />
+
+    <TextView
+
+        android:id="@+id/register_already"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@id/regist_signup_btn"
+        android:layout_marginLeft="70dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/regist_signup_btn"
+        android:layout_height="wrap_content"
+        android:text="Already have a account?"
+        />
+    <TextView
+        android:id="@+id/Register_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_toRightOf="@id/register_already"
+        android:layout_alignBaseline="@id/register_already"
+        android:textColor="#3F51B5"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
