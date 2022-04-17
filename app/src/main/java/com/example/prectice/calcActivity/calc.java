@@ -21,16 +21,12 @@ public class calc extends AppCompatActivity implements TextWatcher {
         binding.calcNum1.addTextChangedListener(this);
         binding.calcNum2.addTextChangedListener(this);
 
+
+        binding.calcRadg.setOnCheckedChangeListener((radioGroup, i) -> {
+            calculate();
+        });
     }
-
-    @Override
-    public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-    }
-
-    @Override
-    public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
+    public  void calculate(){
         String num1=binding.calcNum1.getText().toString();
         String num2=binding.calcNum2.getText().toString();
 
@@ -43,24 +39,36 @@ public class calc extends AppCompatActivity implements TextWatcher {
             float number2=Float.parseFloat(num2);
 
             switch (binding.calcRadg.getCheckedRadioButtonId())
-        {
-            case R.id.calc_sum:
-                binding.calcTv.setText(String.valueOf(number1+number2));
-                break;
-            case R.id.calc_div:
-                binding.calcTv.setText(String.valueOf(number1/number2));
-                break;
-            case R.id.calc_sub:
-                binding.calcTv.setText(String.valueOf(number1-number2));
-                break;
-            case R.id.calc_mul:
-                binding.calcTv.setText(String.valueOf(number1*number2));
-                break;
-            default:
-                binding.calcTv.setText("please select opreation");
+            {
+                case R.id.calc_sum:
+                    binding.calcTv.setText(String.valueOf(number1+number2));
+                    break;
+                case R.id.calc_div:
+                    binding.calcTv.setText(String.valueOf(number1/number2));
+                    break;
+                case R.id.calc_sub:
+                    binding.calcTv.setText(String.valueOf(number1-number2));
+                    break;
+                case R.id.calc_mul:
+                    binding.calcTv.setText(String.valueOf(number1*number2));
+                    break;
+                default:
+                    binding.calcTv.setText("please select opreation");
 
+            }
         }
-        }
+    }
+
+
+    @Override
+    public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            calculate();
+    }
+
+    @Override
+    public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+
     }
 
     @Override
