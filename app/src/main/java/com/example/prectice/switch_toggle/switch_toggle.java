@@ -5,34 +5,55 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.CompoundButton;
 
+import com.example.prectice.R;
 import com.example.prectice.databinding.ActivitySwitchToggleBinding;
 
-public class switch_toggle extends AppCompatActivity implements  CompoundButton.OnCheckedChangeListener{
+public class switch_toggle extends AppCompatActivity {
 
     private ActivitySwitchToggleBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding=ActivitySwitchToggleBinding.inflate(getLayoutInflater());
-        binding.getRoot().setBackgroundColor(Color.rgb(93,94,23));
-
-        binding.switch1.setOnCheckedChangeListener(this);
-
-        binding.toggleButton.setOnCheckedChangeListener(this);
-
-        binding.checkbox.setOnCheckedChangeListener(this);
-
         setContentView(binding.getRoot());
+        binding.getRoot().setBackgroundColor(Color.rgb(55,252,23));
+        binding.checkbox.setOnCheckedChangeListener((compoundButton, b) -> {
+                if(b)
+                {
+                    binding.getRoot().setBackgroundColor(Color.rgb(255,252,231));
+                }
+                else
+                {
+                    binding.getRoot().setBackgroundColor(Color.rgb(55,252,23));
+                }
+        });
+
+        binding.toggleButton.setOnCheckedChangeListener((compoundButton, b) -> {
+            if (b)
+            {
+                binding.toggelImv.setVisibility(View.GONE);
+            }
+            else
+            {
+                binding.toggelImv.setVisibility(View.VISIBLE);
+            }
+        });
+
+        binding.switch1.setOnCheckedChangeListener((compoundButton, b) -> {
+            if (b){
+                binding.getRoot().setBackgroundResource(R.drawable.ic_launcher_background);
+            }
+            else
+            {
+
+            }
+        });
+
+
+
     }
-    @Override
-    public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-        if(b){
-            binding.getRoot().setBackgroundColor(Color.rgb(73,34,22));
-        }
-        else {
-            binding.getRoot().setBackgroundColor(Color.rgb(93,94,23));
-        }
-    }
+
 }

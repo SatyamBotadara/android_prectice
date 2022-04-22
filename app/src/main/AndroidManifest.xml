@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.prectice">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,31 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prectice">
         <activity
-            android:name=".splashScreenActivity"
+            android:name=".fragment_new_way.anotherHolder"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />/
-            </intent-filter>
         </activity>
+        <activity
+            android:name=".Fragment.holderActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".splashScreenActivity"
+            android:exported="true" />
         <activity
             android:name=".login_registation_app.registration_activity"
             android:exported="false" />
         <activity
             android:name=".login_registation_app.login_activity"
-            android:exported="true">
-
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".design.design_demo"
             android:exported="false" />
         <activity
             android:name=".calcActivity.calc"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".navigation_drawer.mynavigation_drawer"
             android:exported="true" />
@@ -87,10 +86,14 @@
             android:exported="true" />
         <activity
             android:name=".switch_toggle.switch_toggle"
-            android:exported="true" />
-        <activity
-            android:name=".fragment_new_way.holder"
-            android:exported="true" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true" />

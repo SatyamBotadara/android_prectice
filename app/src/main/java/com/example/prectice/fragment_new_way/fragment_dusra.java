@@ -12,28 +12,27 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.prectice.R;
-import com.example.prectice.databinding.FragmentFirstFragmentBinding;
+import com.example.prectice.databinding.FragmentDusraBinding;
 
 
-public class first_fragment extends Fragment {
+public class fragment_dusra extends Fragment {
 
-    private FragmentFirstFragmentBinding binding;
+    FragmentDusraBinding binding;
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-        binding=FragmentFirstFragmentBinding.inflate(getLayoutInflater());
-
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        binding=FragmentDusraBinding.inflate(getLayoutInflater());
         return binding.getRoot();
     }
-
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.btnGoNext.setOnClickListener(view1 -> {
-
-//            Navigation.findNavController(getView()).navigate(R.id.action_first_fragment_to_second_fragment);
+        binding.btnsecondtofirst.setOnClickListener(view1 -> {
+            Navigation.findNavController(getView()).popBackStack();
         });
+
+
     }
 }
