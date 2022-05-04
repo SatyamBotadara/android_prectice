@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/drawable/banner.xml" value="0.2255" />
         <entry key="app/src/main/res/drawable/button_desing.xml" value="0.2805" />
         <entry key="app/src/main/res/drawable/demo.xml" value="0.2805" />
+        <entry key="app/src/main/res/drawable/design.xml" value="0.18" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2255" />
         <entry key="app/src/main/res/drawable/logo1_background.xml" value="0.2805" />
         <entry key="app/src/main/res/layout/acitivity_linear.xml" value="0.33" />
@@ -20,6 +21,7 @@
         <entry key="app/src/main/res/layout/activity_design_demo2.xml" value="0.29243266353142366" />
         <entry key="app/src/main/res/layout/activity_display_marks.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_dusri.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_file_storage.xml" value="0.333786231884058" />
         <entry key="app/src/main/res/layout/activity_first_explicit.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_get_marks.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_holder.xml" value="0.35625" />
@@ -30,6 +32,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_mynavigation_drawer.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_one.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_onlineattendacne.xml" value="0.333786231884058" />
         <entry key="app/src/main/res/layout/activity_pheli.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_registration.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_second_explicit.xml" value="0.3411458333333333" />
@@ -53,6 +56,7 @@
         <entry key="app/src/main/res/layout/fragment_three.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_two.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/frame_layout.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/navigation_layout.xml" value="0.333786231884058" />
         <entry key="app/src/main/res/layout/relative_layout.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/table_layout.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/toolbar.xml" value="0.25" />

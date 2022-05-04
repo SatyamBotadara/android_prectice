@@ -11,16 +11,16 @@
 
 
             <ImageView
-                android:layout_marginTop="10dp"
                 android:id="@+id/logo_imv"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/logo1_background" />
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:text="Satyam botadara"
+                android:text="Sachin"
                 android:textSize="20dp"
                 android:id="@+id/text_view"
                 android:textColor="@color/black"
@@ -32,7 +32,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:id="@+id/email_nav"
-                android:text="botadarasatyam99m@gmail.com"
+                android:text="sachin@gmail.com"
                 android:textSize="14dp"
                 android:textColor="@color/black"
                 android:layout_alignStart="@id/text_view"
@@ -41,14 +41,54 @@
                 android:layout_height="wrap_content"/>
 
             <Button
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
-                android:textColor="@color/black"
-                android:backgroundTint="#DBDBE1"
+                android:id="@+id/itme1"
+                android:layout_below="@+id/email_nav"
                 android:layout_height="wrap_content"
-                android:text="button 1"
-                android:layout_below="@id/email_nav"
+                android:text="My profile"
+                android:backgroundTint="#D7D8E3"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                />
 
+            <Button
+                android:id="@+id/itme2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itme1"
+                android:layout_marginTop="20dp"
+                android:text="My Attendance"
+                android:backgroundTint="#D7D8E3"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#D7D8E3"
+                android:layout_width="match_parent"
+                android:id="@+id/itme3"
+                android:layout_below="@+id/itme2"
+                android:layout_height="wrap_content"
+                android:text="Setting"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:backgroundTint="#D7D8E3"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:id="@+id/itme4"
+                android:layout_below="@+id/itme3"
+                android:layout_height="wrap_content"
+                android:text="Log Out"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textStyle="bold"
                 />
         </RelativeLayout>
 </com.google.android.material.navigation.NavigationView>

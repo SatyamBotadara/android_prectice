@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".design.onlineattendacne">
+
+
+    <ImageView
+        android:id="@+id/logo_imv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo" />
+<androidx.constraintlayout.widget.Group
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    >
+
+</androidx.constraintlayout.widget.Group>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:id="@+id/itme1"
+            android:layout_below="@+id/logo_imv"
+            android:layout_height="wrap_content"
+            android:text="Sachin Kotadiya"
+            android:backgroundTint="#D7D8E3"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/itme2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itme1"
+            android:layout_marginTop="20dp"
+            android:text="SachinKotadiya@gmail.com"
+            android:backgroundTint="#D7D8E3"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#D7D8E3"
+            android:layout_width="match_parent"
+            android:id="@+id/itme3"
+            android:layout_below="@+id/itme2"
+            android:layout_height="wrap_content"
+            android:text="Div A"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:backgroundTint="#D7D8E3"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:id="@+id/itme4"
+            android:layout_below="@+id/itme3"
+            android:layout_height="wrap_content"
+            android:text="190280116045"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+
+
+</RelativeLayout>

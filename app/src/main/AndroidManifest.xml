@@ -12,15 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prectice">
         <activity
-            android:name=".fragment_new_way.anotherHolder"
+            android:name=".offline_storage.file_storage"
             android:exported="true" >
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
-            android:name=".Fragment.holderActivity"
+            android:name=".design.onlineattendacne"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".fragment_new_way.anotherHolder"
+            android:exported="true" />
+        <activity
+            android:name=".Fragment.holderActivity"
+            android:exported="true" />
         <activity
             android:name=".splashScreenActivity"
             android:exported="true" />
@@ -29,7 +40,7 @@
             android:exported="false" />
         <activity
             android:name=".login_registation_app.login_activity"
-            android:exported="true" />
+            android:exported="true"></activity>
         <activity
             android:name=".design.design_demo"
             android:exported="false" />
@@ -86,14 +97,7 @@
             android:exported="true" />
         <activity
             android:name=".switch_toggle.switch_toggle"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />
