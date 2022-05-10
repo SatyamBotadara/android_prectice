@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment_new_way.anotherHolder">
+    tools:context=".fragment_new_way.another_holder_activity">
 
     <androidx.fragment.app.FragmentContainerView
-        android:layout_width="300dp"
+        android:id="@+id/another_fcv"
+        android:layout_width="400dp"
         android:layout_height="500dp"
         android:layout_centerInParent="true"
-        android:id="@+id/fcv_another_holder"
+
         android:name="androidx.navigation.fragment.NavHostFragment"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/nav_graph"/>
+        app:navGraph="@navigation/my_nav_graph" />
 
 </RelativeLayout>

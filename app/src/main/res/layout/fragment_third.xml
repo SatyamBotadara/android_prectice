@@ -3,17 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFEB3B"
-    tools:context=".Fragment.fragment_this_third">
+    android:background="#FF5722"
+    tools:context=".fragment.ThirdFragment">
 
     <Button
+        android:id="@+id/third_to_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="back"
-        android:id="@+id/third_to_goa"
+        android:text="go back"
         />
-
-
-
 </RelativeLayout>

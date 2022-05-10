@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import com.example.prectice.databinding.ActivitySplashScreenBinding;
-import com.example.prectice.login_registation_app.login_activity;
-
 
 public class splashScreenActivity extends AppCompatActivity {
     ActivitySplashScreenBinding binding;
@@ -19,7 +17,6 @@ public class splashScreenActivity extends AppCompatActivity {
         Thread t=new Thread(new splase());
         t.start();
     }
-
 
     class splase implements  Runnable{
 

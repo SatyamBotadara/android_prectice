@@ -1,6 +1,6 @@
-package com.example.prectice.Fragment;
+package com.example.prectice.fragment;
 
-import android.os.Bundle;
+import  android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -11,16 +11,15 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.example.prectice.R;
-import com.example.prectice.databinding.FragmentPhela2Binding;
+import com.example.prectice.databinding.FragmentPhelaBinding;
 
-
-public class phela extends Fragment {
-
-    private FragmentPhela2Binding binding;
+public class phela_fragment extends Fragment {
+    private FragmentPhelaBinding binding;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-        binding=FragmentPhela2Binding.inflate(getLayoutInflater());
+        binding=FragmentPhelaBinding.inflate(getLayoutInflater());
         return binding.getRoot();
     }
 
@@ -28,13 +27,17 @@ public class phela extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.btnPhelaGoa.setOnClickListener(view1 -> {
-
+        binding.firstToSecond.setOnClickListener(view1 -> {
             FragmentManager fm=getParentFragmentManager();
             FragmentTransaction ft=fm.beginTransaction();
-            ft.replace(R.id.fragment_fcv,new goa_fragment());
-            ft.addToBackStack(null);
+            ft.replace(R.id.fcv,new secondFragment());
+            ft.addToBackStack("hello");
             ft.commit();
         });
+
+
+
+
+
     }
 }

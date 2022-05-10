@@ -41,15 +41,19 @@
         <entry key="app/src/main/res/layout/activity_third_explicit.xml" value="0.3411458333333333" />
         <entry key="app/src/main/res/layout/activity_two.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_view_binding.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/content_design_demo.xml" value="0.18177083333333333" />
         <entry key="app/src/main/res/layout/cordinator_layout.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/fragment_dehli.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_dusra.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_first_fragment.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_four.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_fragemnt_phela.xml" value="0.3411458333333333" />
+        <entry key="app/src/main/res/layout/fragment_goa.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_goa_fragment.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_one.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_phela.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_phela2.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_second_fragment.xml" value="0.3411458333333333" />
         <entry key="app/src/main/res/layout/fragment_third.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_this_third.xml" value="0.35625" />

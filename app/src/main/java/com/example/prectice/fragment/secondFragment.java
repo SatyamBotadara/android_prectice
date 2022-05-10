@@ -1,4 +1,4 @@
-package com.example.prectice.Fragment;
+package com.example.prectice.fragment;
 
 import android.os.Bundle;
 
@@ -13,15 +13,15 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.prectice.R;
-import com.example.prectice.databinding.FragmentThisThirdBinding;
+import com.example.prectice.databinding.FragmentSecondBinding;
 
 
-public class fragment_this_third extends Fragment {
+public class secondFragment extends Fragment {
 
-    private FragmentThisThirdBinding binding;
+    private FragmentSecondBinding binding;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-        binding=FragmentThisThirdBinding.inflate(getLayoutInflater());
+        binding=FragmentSecondBinding.inflate(getLayoutInflater());
         return binding.getRoot();
     }
 
@@ -29,13 +29,24 @@ public class fragment_this_third extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.thirdToGoa.setOnClickListener(view1 -> {
+        binding.secondToThird.setOnClickListener(view1 -> {
+            FragmentManager fm=getParentFragmentManager();
+            FragmentTransaction ft= fm.beginTransaction();
+
+            ft.replace(R.id.fcv,new ThirdFragment());
+            ft.addToBackStack("hello");
+            ft.commit();
+
+        });
+
+        binding.secondToFirst.setOnClickListener(view1 -> {
             FragmentManager fm=getParentFragmentManager();
             FragmentTransaction ft=fm.beginTransaction();
-
-            ft.replace(R.id.fragment_fcv,new goa_fragment());
+            ft.replace(R.id.fcv,new phela_fragment());
             fm.popBackStack();
             ft.commit();
         });
+
+
     }
 }

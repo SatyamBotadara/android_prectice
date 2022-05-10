@@ -5,23 +5,23 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.prectice.R;
-import com.example.prectice.databinding.FragmentDusraBinding;
+import com.example.prectice.databinding.FragmentGoaBinding;
 
 
-public class fragment_dusra extends Fragment {
+public class goaFragment extends Fragment {
 
-    FragmentDusraBinding binding;
+    private FragmentGoaBinding binding;
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        binding=FragmentDusraBinding.inflate(getLayoutInflater());
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
+
+        binding=FragmentGoaBinding.inflate(getLayoutInflater());
         return binding.getRoot();
     }
 
@@ -29,10 +29,9 @@ public class fragment_dusra extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.btnsecondtofirst.setOnClickListener(view1 -> {
-            Navigation.findNavController(getView()).popBackStack();
+        binding.btnGoback.setOnClickListener(view1 -> {
+            NavController nc= Navigation.findNavController(getView());
+            nc.popBackStack();
         });
-
-
     }
 }
