@@ -12,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prectice">
         <activity
+            android:name=".practice"
+            android:exported="false" />
+        <activity
             android:name=".fragment_new_way.another_holder_activity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,9 +25,7 @@
         </activity>
         <activity
             android:name=".fragment.holder_activity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".offline_storage.file_storage"
             android:exported="true" />
@@ -33,7 +34,7 @@
             android:exported="true" />
         <activity
             android:name=".splashScreenActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".login_registation_app.registration_activity"
             android:exported="false" />
