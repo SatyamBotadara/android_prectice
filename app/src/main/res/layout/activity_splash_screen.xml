@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#CDDC39"
-    tools:context=".splashScreenActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animationView"
-        android:layout_centerInParent="true"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
-        app:lottie_rawRes="@raw/lottife_lock"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"/>
+    <data>
 
 
+    </data>
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CDDC39"
+        tools:context=".splashScreenActivity">
+
+        <com.airbnb.lottie.LottieAnimationView
+
+            android:layout_centerInParent="true"
+            android:id="@+id/animationView"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            app:lottie_url="https://assets1.lottiefiles.com/private_files/lf30_nln9kxzl.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+
+            />
+
+    </RelativeLayout>
+
+</layout>

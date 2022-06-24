@@ -4,33 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.holder_activity">
+    tools:context=".Fragments.holderActivity">
+
 
     <androidx.fragment.app.FragmentContainerView
-        android:layout_width="350dp"
-        android:layout_height="400dp"
-        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:id="@+id/fcv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="400dp"
+        android:layout_centerInParent="true"
         />
-
     <Button
+        android:text="get name"
         android:layout_width="wrap_content"
-        android:id="@+id/btn_prev"
-        android:text="prevoius"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:text="next"
-        android:id="@+id/btn_next"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_frag"
+        />
 
 </RelativeLayout>

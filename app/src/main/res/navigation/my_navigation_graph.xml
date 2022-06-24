@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation_graph"
+    app:startDestination="@id/phela_fragment">
+
+    <fragment
+        android:id="@+id/phela_fragment"
+        android:name="com.example.prectice.fragment_using_navigation.phela_fragment"
+        android:label="phela_fragment"
+        tools:layout="@layout/phela_fragment" >
+        <action
+            android:id="@+id/action_phela_fragment_to_second_fragment"
+            app:destination="@id/second_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/second_fragment"
+        android:name="com.example.prectice.fragment_using_navigation.second_fragment"
+        android:label="second_fragment"
+        tools:layout="@layout/second_fragment" >
+        <action
+            android:id="@+id/action_second_fragment_to_third_fragment"
+            app:destination="@id/third_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/third_fragment"
+        android:name="com.example.prectice.fragment_using_navigation.third_fragment"
+        android:label="third_fragment"
+        tools:layout="@layout/third_fragment" />
+</navigation>

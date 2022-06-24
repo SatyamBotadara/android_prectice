@@ -19,4 +19,7 @@
     </style>
     <style name="Theme.Prectice.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.Prectice.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
 </resources>

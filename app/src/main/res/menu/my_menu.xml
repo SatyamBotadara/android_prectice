@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:id="@+id/item1"
-        android:title="item1"
+  <item
+      android:title=""
+      android:id="@+id/item1"
+      android:icon="@drawable/menu"
+      app:showAsAction="always"
+      >
+    <menu>
+
+      <item android:title="setting"
+          android:icon="@drawable/setting"
         />
-    <item
-        android:id="@+id/item2"
-        android:title="item2"
+
+      <item
+        android:title="login"
+          android:icon="@drawable/login"
         />
-    <item
-        android:id="@+id/item3"
-        android:title="item3"
-        />
-    <item
-    android:id="@+id/item4"
-    android:title="item4"
-    />
+
+    </menu>
+
+  </item>
 
 
 </menu>
