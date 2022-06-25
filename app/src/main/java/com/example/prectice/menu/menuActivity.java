@@ -21,32 +21,53 @@ public class menuActivity extends AppCompatActivity {
     private Menu menu;
     private ActivityMenuBinding binding;
     private boolean menuBoolean=false;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         binding=ActivityMenuBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+//        registerForContextMenu(findViewById(R.id.));
+
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu)
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo)
     {
+        super.onCreateContextMenu(menu, v, menuInfo);
         getMenuInflater().inflate(R.menu.my_menu,menu);
-        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item)
+    public boolean onContextItemSelected(@NonNull MenuItem item)
     {
-
-        return super.onOptionsItemSelected(item);
+        return super.onContextItemSelected(item);
     }
 
 
-    @Override
-    public boolean onPrepareOptionsMenu(Menu menu)
-    {
-        // create the daynamic menu and change the items of menu
-        return super.onPrepareOptionsMenu(menu);
-    }
+    // option menu
+
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu)
+//    {
+//        getMenuInflater().inflate(R.menu.my_menu,menu);
+//        return super.onCreateOptionsMenu(menu);
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(@NonNull MenuItem item)
+//    {
+//
+//        return super.onOptionsItemSelected(item);
+//    }
+//
+//
+//    @Override
+//    public boolean onPrepareOptionsMenu(Menu menu)
+//    {
+//        // create the daynamic menu and change the items of menu
+//
+//        return super.onPrepareOptionsMenu(menu);
+//    }
 }
