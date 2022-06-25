@@ -4,15 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menu.menuActivity">
-
+    tools:context=".alertdialog.timepicker">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btncontextmenu"
-        android:text="context menu"
+        android:id="@+id/btntimepicker"
+        android:text="timepicker"
+        android:layout_centerInParent="true"
+        />
 
+    <TextView
+        android:id="@+id/tvtimepicker"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btntimepicker"
+        android:layout_marginTop="30dp"
         />
 
 </RelativeLayout>

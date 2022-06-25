@@ -28,21 +28,8 @@ public class menuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding=ActivityMenuBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-//        registerForContextMenu(findViewById(R.id.));
 
-    }
 
-    @Override
-    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo)
-    {
-        super.onCreateContextMenu(menu, v, menuInfo);
-        getMenuInflater().inflate(R.menu.my_menu,menu);
-    }
-
-    @Override
-    public boolean onContextItemSelected(@NonNull MenuItem item)
-    {
-        return super.onContextItemSelected(item);
     }
 
 
@@ -70,4 +57,6 @@ public class menuActivity extends AppCompatActivity {
 //
 //        return super.onPrepareOptionsMenu(menu);
 //    }
+
+
 }

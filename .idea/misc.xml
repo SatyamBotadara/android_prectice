@@ -35,6 +35,7 @@
         <entry key="app/src/main/res/layout/activity_holder2.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_holder3.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_implicit_intent.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_listview.xml" value="0.3220108695652174" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_menu.xml" value="0.3265625" />
@@ -51,6 +52,7 @@
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_switch_toggle.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_third_explicit.xml" value="0.3411458333333333" />
+        <entry key="app/src/main/res/layout/activity_timepicker.xml" value="0.3220108695652174" />
         <entry key="app/src/main/res/layout/activity_two.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_view_binding.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/content_design_demo.xml" value="0.18177083333333333" />

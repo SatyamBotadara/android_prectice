@@ -11,35 +11,49 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prectice">
         <activity
+            android:name=".listview.listviewActivity"
+            android:exported="true" >
+
+
+        </activity>
+        <activity
+            android:name=".alertdialog.timepicker"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".alertdialog.busTicketBooking"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity
             android:name=".alertdialog.dobpicker"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".alertdialog.datepickerforMovieTicket"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".alertdialog.DatepickerActivity"
             android:exported="false" />
         <activity
             android:name=".alertdialog.alertdialogActivity"
             android:exported="false" />
+
         <activity
             android:name=".menu.menuActivity"
-            android:exported="true" />
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
         <activity
             android:name=".seekbar.seekbarActivity"
             android:exported="true" />

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<style name="timepickertheme" parent="ThemeOverlay.MaterialComponents.TimePicker">
+
+    <item name="colorPrimary">#FFEB3B</item>
+    <item name="colorPrimaryVariant">#03A9F4</item>
+    <item name="colorOnPrimary">#FF9E9E</item>
+    <!-- Secondary brand color. -->
+    <item name="colorSecondary">#CDDC39</item>
+    <item name="colorSecondaryVariant">#FF9800</item>
+    <item name="colorOnSecondary">#9C27B0</item>
+    <!-- Status bar color. -->
+
+    <!-- Customize your theme here. -->
+
+
+</style>
+
+</resources>
