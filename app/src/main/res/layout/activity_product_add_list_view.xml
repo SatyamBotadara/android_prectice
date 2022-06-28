@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".listview.product_add_list_view">
+
+    <EditText
+        android:id="@+id/productaddedt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter product name"
+        />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/productaddedt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_add_product"
+        />
+
+    <ListView
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btn_add_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/addprodcutlistview"
+        />
+
+
+</RelativeLayout>
