@@ -2,26 +2,29 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-  <item
-      android:title=""
-      android:id="@+id/item1"
-      android:icon="@drawable/menu"
-      app:showAsAction="always"
-      >
-    <menu>
 
-      <item android:title="setting"
-          android:icon="@drawable/setting"
-        />
 
-      <item
-        android:title="login"
-          android:icon="@drawable/login"
-        />
-
-    </menu>
-
-  </item>
+    <item
+        android:id="@+id/main_item"
+        android:title="hello">
+        <menu>
+            <item
+                android:id="@+id/inbox_item"
+                android:icon="@drawable/logo"
+                android:title="hello"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/outbox_item"
+                android:icon="@drawable/logo"
+                android:title="hello"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/favourites_item"
+                android:icon="@drawable/logo"
+                android:title="hello"
+                android:checkable="true"/>
+        </menu>
+    </item>
 
 
 </menu>

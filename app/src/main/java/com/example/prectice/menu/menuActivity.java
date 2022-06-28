@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CompoundButton;
+import android.widget.PopupMenu;
 import android.widget.Toast;
 
 import com.example.prectice.R;
@@ -29,9 +30,38 @@ public class menuActivity extends AppCompatActivity {
         binding=ActivityMenuBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+//        registerForContextMenu(binding.btncontextmenu);
+
+
+        binding.popupmenu.setOnClickListener(view -> {
+            PopupMenu popupMenu=new PopupMenu(menuActivity.this,view);
+
+            popupMenu.getMenuInflater().inflate(R.menu.my_menu,popupMenu.getMenu());
+            popupMenu.setOnMenuItemClickListener(menuItem -> {
+
+                menuItem.getItemId();
+                return false;
+            });
+
+            popupMenu.show();
+        });
 
     }
 
+    // context menu
+
+//    @Override
+//    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo)
+//    {
+//        super.onCreateContextMenu(menu, v, menuInfo);
+//        getMenuInflater().inflate(R.menu.my_menu,menu);
+//    }
+//
+//    @Override
+//    public boolean onContextItemSelected(@NonNull MenuItem item)
+//    {
+//        return super.onContextItemSelected(item);
+//    }
 
     // option menu
 
