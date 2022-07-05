@@ -12,5 +12,7 @@ public class design_demo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_design_demo2);
+
+
     }
 }
