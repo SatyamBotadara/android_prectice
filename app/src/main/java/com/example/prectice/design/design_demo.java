@@ -14,5 +14,6 @@ public class design_demo extends AppCompatActivity {
         setContentView(R.layout.activity_design_demo2);
 
 
+
     }
 }
