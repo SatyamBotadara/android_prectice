@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dialog2.dialog">
+
+<!--    <Button-->
+<!--        android:id="@+id/progressdialog"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:text="progress dialog1"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Date picker"-->
+<!--        android:id="@+id/datepicker"-->
+<!--        android:layout_below="@id/progressdialog"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_below="@id/datepicker"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Time picker"-->
+<!--        android:id="@+id/timepicker"-->
+<!--        />-->
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bottomsheet"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|center"
+        android:id="@+id/bottomsheetdialog"
+
+        />
+
+<!--    <Button-->
+<!--        android:id="@+id/fullscreendialog"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="fullscreen dialog"-->
+<!--        android:layout_below="@id/timepicker"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        />-->
+
+<!--   <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--       android:layout_alignParentBottom="true"-->
+<!--       android:layout_width="match_parent"-->
+
+<!--       android:layout_height="80dp"-->
+<!--       >-->
+
+<!--       <com.google.android.material.bottomappbar.BottomAppBar-->
+<!--           android:id="@+id/bottomappbar"-->
+<!--            android:layout_gravity="bottom"-->
+<!--           android:layout_width="match_parent"-->
+<!--           android:layout_height="50dp"-->
+<!--           android:backgroundTint="@color/black"-->
+<!--           app:fabCradleRoundedCornerRadius="10dp"-->
+<!--           />-->
+
+<!--       <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--           android:layout_width="wrap_content"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           app:layout_anchor="@id/bottomappbar"-->
+<!--           />-->
+
+<!--   </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="Totalprice"
+            type="java.lang.Integer" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:context=".ListView.listview">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter product name"
+            android:id="@+id/edtproductName" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtproductName"
+            android:layout_marginTop="10dp"
+            android:hint="Enter price"
+            android:id="@+id/edtproductprice" />
+
+        <Button
+            android:id="@+id/btnadditem"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtproductprice"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:text="Add to Cart" />
+
+
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnadditem"
+                android:id="@+id/productlistview" />
+
+            <TextView
+
+                android:text="@{String.valueOf(Totalprice)}"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+    </RelativeLayout>
+</layout>

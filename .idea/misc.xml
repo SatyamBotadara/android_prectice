@@ -25,9 +25,11 @@
         <entry key="app/src/main/res/layout/activity_datepicker.xml" value="0.3265625" />
         <entry key="app/src/main/res/layout/activity_datepickerfor_movie_ticket.xml" value="0.3265625" />
         <entry key="app/src/main/res/layout/activity_design_demo2.xml" value="0.29243266353142366" />
+        <entry key="app/src/main/res/layout/activity_dialog.xml" value="0.328125" />
         <entry key="app/src/main/res/layout/activity_display_marks.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_dobpicker.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_dusri.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_expandable_toolbar.xml" value="0.30885416666666665" />
         <entry key="app/src/main/res/layout/activity_file_storage.xml" value="0.333786231884058" />
         <entry key="app/src/main/res/layout/activity_first_explicit.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_get_marks.xml" value="0.35625" />
@@ -36,6 +38,7 @@
         <entry key="app/src/main/res/layout/activity_holder3.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_implicit_intent.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_listview.xml" value="0.3220108695652174" />
+        <entry key="app/src/main/res/layout/activity_listview2.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_menu.xml" value="0.3265625" />
@@ -43,6 +46,7 @@
         <entry key="app/src/main/res/layout/activity_mynavigation_drawer.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_navigation.xml" value="0.25521305530371713" />
         <entry key="app/src/main/res/layout/activity_navigation_holder.xml" value="0.32065217391304346" />
+        <entry key="app/src/main/res/layout/activity_notes_taking.xml" value="0.3111413043478261" />
         <entry key="app/src/main/res/layout/activity_one.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_onlineattendacne.xml" value="0.333786231884058" />
         <entry key="app/src/main/res/layout/activity_pheli.xml" value="0.35625" />
@@ -78,8 +82,10 @@
         <entry key="app/src/main/res/layout/fragment_three.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_two.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/frame_layout.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/listview_update_layout.xml" value="0.5" />
         <entry key="app/src/main/res/layout/navigation_header_layout.xml" value="0.3220108695652174" />
         <entry key="app/src/main/res/layout/navigation_layout.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/note_list_item.xml" value="0.3255208333333333" />
         <entry key="app/src/main/res/layout/phela_fragment.xml" value="0.32065217391304346" />
         <entry key="app/src/main/res/layout/relative_layout.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/second_fragment.xml" value="0.32065217391304346" />
@@ -87,6 +93,7 @@
         <entry key="app/src/main/res/layout/third_fragment.xml" value="0.32065217391304346" />
         <entry key="app/src/main/res/layout/toolbar.xml" value="0.25" />
         <entry key="app/src/main/res/layout/top_layout.xml" value="0.35625" />
+        <entry key="app/src/main/res/menu/listviewpopupmenu.xml" value="0.3255208333333333" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.35625" />
         <entry key="app/src/main/res/menu/my_menu.xml" value="0.35625" />
       </map>

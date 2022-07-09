@@ -11,11 +11,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prectice">
         <activity
-            android:name=".product_add_list_view"
+            android:name=".simpleadapter.simple_adapter"
+            android:exported="false" />
+        <activity
+            android:name=".ListView.NotesTaking"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListView.listview"
+            android:exported="true"/>
+        <activity
+            android:name=".expandable_toolbar.expandableToolbar"
+            android:exported="true" />
+        <activity
+            android:name=".dialog2.dialog"
+            android:exported="true" />
+        <activity
+            android:name=".listview.product_add_list_view"
             android:exported="false" />
         <activity
             android:name=".navigation_drawer.navigationActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".radiobutton.radioActivity"
             android:exported="true" />
@@ -27,19 +48,13 @@
             android:exported="true" />
         <activity
             android:name=".alertdialog.busTicketBooking"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".alertdialog.dobpicker"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".alertdialog.datepickerforMovieTicket"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".alertdialog.DatepickerActivity"
             android:exported="false" />
